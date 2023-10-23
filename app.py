@@ -3,7 +3,9 @@ from surveys import satisfaction_survey
 from flask_debugtoolbar import DebugToolbarExtension
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "secretkey"  
+app.config['SECRET_KEY'] = "secretkey" 
+
+toolbar = DebugToolbarExtension(app)
 
 import logging
 
