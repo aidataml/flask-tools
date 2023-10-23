@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey App</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css" /> 
+</head>
+<body>
 
+    <header>
+        <h1>Survey App</h1>
+    </header>
+    {% for msg in get_flashed_messages() %}
+    <p>{{ msg }}</p>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+        <p>Copyright Survey App © 2023</p>
+    </footer>
+
+</body>
+</html>
